@@ -22,7 +22,7 @@ public class User implements Serializable {
 	private String uLastName;
 	private Set<UserProgram> userPrograms;
 
-	@Id
+	
 	@Column(name = "Email")
 	public String getuEmail() {
 		return uEmail;
@@ -31,7 +31,8 @@ public class User implements Serializable {
 	public void setuEmail(String uEmail) {
 		this.uEmail = uEmail;
 	}
-
+	@Id
+	@Column(name="Id")
 	public String getuId() {
 		return uId;
 	}

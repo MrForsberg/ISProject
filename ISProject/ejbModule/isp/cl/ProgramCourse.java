@@ -1,5 +1,7 @@
 package isp.cl;
 
+import java.io.Serializable;
+
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
@@ -8,7 +10,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "Programs_courses")
-public class ProgramCourse {
+public class ProgramCourse implements Serializable{
 
 	private ProgramCourseId id;
 

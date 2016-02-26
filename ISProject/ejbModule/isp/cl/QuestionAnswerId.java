@@ -1,9 +1,11 @@
 package isp.cl;
 
+import java.io.Serializable;
+
 import javax.persistence.Column;
 import com.sun.istack.internal.NotNull;
 
-public class QuestionAnswerId {
+public class QuestionAnswerId implements Serializable{
 	private String qId;
 	private String aId;
 

@@ -1,10 +1,12 @@
 package isp.cl;
 
+import java.io.Serializable;
+
 import javax.persistence.Column;
 
 import com.sun.istack.internal.NotNull;
 
-public class UserProgramId {
+public class UserProgramId implements Serializable{
 
 	private String uId;
 	private String pId;
